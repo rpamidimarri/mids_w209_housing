@@ -37,8 +37,8 @@
       <div class="container">
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">
-          <a class="navbar-brand" href="#">About</a>
-          <a class="navbar-brand" href="#">Contact</a>
+          <a class="navbar-brand" href="#contenttable">Content</a>
+          <a class="navbar-brand" href="#Contact">Contact</a>
           <a class="navbar-brand" href="#Tableau-Map-Help">Help</a>
           </form>
         </div><!--/.navbar-collapse -->
@@ -49,17 +49,21 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Housing Market Analysis</h1>
+
         <p>Buying a home is a very stressful process. Whether you are a real estate investor or you want to buy a home to live in, you have to make a thorough analysis of the real estate market to make a smart decision. 
         </p>
 
         <p>As an investor you may be interested in the amount of rent you would get for the investment you want to make. As a first time home buyer, you may be interested in finding where you can afford to buy. If you want to live in the home, you may want to only look for homes in a particular region in a particular metro. If you only want to rent out the place, you may want to look at the entire real estate market. As you see, the way you want to analyze the market depends on your specific use case. There are many tools like zillow, trulia and redfin which let you search for homes based on many criteria once you have a good idea of where and what you want to buy. But, there are not many tools to help you if you with the basic analysis of real estate market - current state of the market, where you can afford to buy a home, trends over the past few years, best places to invest, etc.</p>
 
         <p>We built this tool to address these problems. The visualizations in this tool help you get a broad picture of the US real estate market. You can find patterns in the market over the past few years and over many geographical locations. You can also drill down into specific metros/regions to get more specific information about the locations you are interested in.</p>
-      </div>
+        </div>
+
     </div>
 
+    
     <div class="container">
       <!-- Example row of columns -->
+      <div id="contenttable">
       <div class="row">
         <div class="col-md-4">
           <h2>Affordability</h2>
@@ -77,6 +81,12 @@
           <p><a class="btn btn-default" href="#Investment" role="button">Explore Investment &raquo;</a></p>
         </div>
       </div>
+       </div>
+
+        <div id="PageBreak">
+        <img id="PageBreak" src="HousingBackground.gif" />
+        </div>
+       
 
 <!--START OF AFFORDABILITY!-->
 <div id="Affordability">
@@ -98,9 +108,9 @@
 
     <!-- NOTE - EMBED YOUR AFFORDABILITY VIZ FROM TABLEAU PUBLIC HERE -->
 
-        <div class='tableauPlaceholder' id='viz1480899892679' style='position: relative'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Af&#47;Affordability_3&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Affordability_3&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Af&#47;Affordability_3&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1480899892679');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1004px';vizElement.style.height='869px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-    
-	<div class="blog-post">
+        <div class='tableauPlaceholder' id='viz1480828396768' style='position: relative'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Af&#47;Affordability_3&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Affordability_3&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Af&#47;Affordability_3&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1480828396768');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1004px';vizElement.style.height='869px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+    <div class="blog-post">
         <h2 class="blog-post-title">Housing Area Details</h2> 
       <p>
         We understand that affordability is not the only criteria one look while buying home . One expect to keep his job around the same area where they are buying house, to build assets with home purchase. Also affordability in area does not guarranty affordability in particular zip code.
@@ -162,12 +172,13 @@
 <div id="Investment">
   <div class="blog-post">
         <h2 class="blog-post-title">Investment</h2>
-
+        <p>When it comes to property investment, it is always so hard to narrow down the focus to a few specific region.</p>
         <p>This section could help you evaluate, from a cash flow standing point, which zip code can give you the highest return on investment. </p>
-        <p>Rent-Price Ratio: annual rent divided by property price - a higher value indicates a higher amount of cash flow.</p>
-        <p>Below is a detailed look-up tool for rent price ratio by zip-code. Please use the filter on the right-hand side to select the property type, median price, and geographical region that you are interested in. Please hover over the dots to view detailed information regarding particular zip code. The zip code list on the left is sorted by RP (Rent-Price) Ratio to help your search. Once you change the filter value, the data on both the list and the map are updated.</p>
+        <p>Below is a detailed look-up tool for rent price ratio by zip-code. Please use the filter on the right-hand side to select the property type, median price, and geographical region that you are interested in. Please hover over the dots to view detailed information regarding particular zip code. The zip code list below the map is sorted by RP (Rent-Price) Ratio to help your search. Once you change the filter value, the data on both the list and the map are updated.</p>
 
-        <div class='tableauPlaceholder' id='viz1480174791907' style='position: relative'><noscript><a href='#'><img alt='Dashboard 3 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;RentPriceRatiobyZipcode&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='RentPriceRatiobyZipcode&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;RentPriceRatiobyZipcode&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1480174791907');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1104px';vizElement.style.height='869px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <p>Rent-Price Ratio: annual rent divided by property price - a higher value indicates a higher amount of cash flow.</p>
+
+        <div class='tableauPlaceholder' id='viz1480899419157' style='position: relative'><noscript><a href='#'><img alt='Dashboard 3 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;RentPriceRatiobyZipCode&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='RentPriceRatiobyZipCode&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;RentPriceRatiobyZipCode&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1480899419157');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1004px';vizElement.style.height='869px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
         
 
@@ -179,20 +190,36 @@
 </div>
 <!--END OF INVESTMENT-!-->
 
-
+<div id="Tableau-Map-Help">
+<p></p>
+<p></p>
+<p></p>
 <div class="blog-post">
     <h2 class="blog-post-title">Help with Tableau Maps</h2>
     <p>
-    Below is some help to work with Tableau Maps
+    If you are not familiar with Tableau Maps, here are some tips to help you get started!
     </p>
-    <div id="Tableau-Map-Help">
       <img id="TabeauInstruction" src="Tableau_Instruction.png" />
     </div>
     </div>
   <hr>
 
 </div> <!-- /container -->
+<div id="Contact">
+<div class="blog-post">
+    <h2 class="blog-post-title">Contact</h2>
+      <p>
+      If you have any questions or suggestions about this website, please feel free to contact our team!
+      </p>
+      <p>Nilesh Bhoyar: nilesh.bhoyar@ischool.berkeley.edu</p>
+      <p>RaghuRam Pamidimarri: rpamidimarri@ischool.berkeley.edu</p>
+      <p>Rui Chen: chenrui@berkeley.edu</p>
+      <p>Talieh Hajzargarbashi: talieh@berkeley.edu </p>
+    </div>
+    </div>
+  <hr>
 
+</div> <!-- /container -->
 
     
 
